@@ -1,7 +1,7 @@
 
-# Automatic Birthday Wisher 🎉
+# Birthday Mailer Bot 🎉
 
-This project is an **Automatic Birthday Wisher** built in Python. It reads birthdays from a CSV file and sends personalized birthday emails to the recipients on their special day. 
+This project is an **Birthday Mailer Bot** built in Python. It reads birthdays from a CSV file and sends personalized birthday emails to the recipients on their special day. 
 
 ## Features
 - Randomly selects one of the pre-defined email templates.
