@@ -7,6 +7,7 @@ import random
 SENDER_EMAIL = "paulohccustodio@gmail.com"
 SENDER_PASSWORD = "hsho rxiu exvl ikie"
 
+
 class LetterMaker:
     # Constructor method to initialize the LetterMaker class
     def __init__(self) -> None:
@@ -70,7 +71,9 @@ class LetterMaker:
                 # Login to the SMTP server with the provided global credentials
                 server.login(SENDER_EMAIL, SENDER_PASSWORD)
                 # Send the email, encoded in UTF-8 to support special characters
-                server.sendmail(SENDER_EMAIL, self.receiver_email, message.encode("utf-8"))
+                server.sendmail(
+                    SENDER_EMAIL, self.receiver_email, message.encode("utf-8")
+                )
                 print("Email sent successfully!")
         except smtplib.SMTPAuthenticationError:
             # Handle authentication errors
@@ -78,6 +81,7 @@ class LetterMaker:
         except Exception as e:
             # Handle any other exceptions during email sending
             print(f"Failed to send email: {e}")
+
 
 # Main script entry point
 if __name__ == "__main__":
