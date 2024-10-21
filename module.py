@@ -4,8 +4,8 @@ from datetime import datetime
 import random
 
 # Global variables for email credentials
-SENDER_EMAIL = "paulohccustodio@gmail.com"
-SENDER_PASSWORD = "hsho rxiu exvl ikie"
+SENDER_EMAIL = ""
+SENDER_PASSWORD = ""
 
 
 class LetterMaker:
